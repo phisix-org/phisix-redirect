@@ -16,9 +16,6 @@
 	</licenses>
 
 	<properties>
-		<!-- uncomment if you wish to set your project here project- gcloud is 
-			used otherwise -->
-		<!-- <app.deploy.project>your-app-id</app.deploy.project> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -26,6 +23,8 @@
 		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 		<archiveClasses>true</archiveClasses>
 		<appengine.app.name>phisix-api</appengine.app.name>
+		<appengine.target.version>1.9.81</appengine.target.version>
+		<sonar.host.url>https://sonarcloud.io/</sonar.host.url>
 	</properties>
 
 	<prerequisites>
@@ -37,7 +36,7 @@
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-1.0-sdk</artifactId>
-			<version>1.9.81</version>
+			<version>${appengine.target.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.tuckey</groupId>
@@ -55,19 +54,19 @@
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-testing</artifactId>
-			<version>1.9.81</version>
+			<version>${appengine.target.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-stubs</artifactId>
-			<version>1.9.81</version>
+			<version>${appengine.target.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-tools-sdk</artifactId>
-			<version>1.9.81</version>
+			<version>${appengine.target.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
