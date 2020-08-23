@@ -14,7 +14,7 @@
 
 	<rule>
 		<from>/(.*)</from>
-		<to type="redirect">http://${redirect.to}.appspot.com/$1</to>
+		<to type="redirect">%{scheme}://${redirect.to}.appspot.com/$1</to>
 	</rule>
 
 </urlrewrite>
