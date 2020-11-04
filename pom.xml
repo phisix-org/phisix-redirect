@@ -23,7 +23,7 @@
 		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 		<archiveClasses>true</archiveClasses>
 		<appengine.app.name>phisix-api</appengine.app.name>
-		<appengine.target.version>1.9.82</appengine.target.version>
+		<appengine.target.version>1.9.83</appengine.target.version>
 		<sonar.host.url>https://sonarcloud.io/</sonar.host.url>
 	</properties>
 
