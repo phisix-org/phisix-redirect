@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: Asia/Singapore
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.appengine:appengine-tools-sdk
+    versions:
+    - 1.9.86
+    - 1.9.87
+  - dependency-name: com.google.appengine:appengine-api-stubs
+    versions:
+    - 1.9.86
+    - 1.9.87
+  - dependency-name: com.google.appengine:appengine-testing
+    versions:
+    - 1.9.86
+    - 1.9.87
+  - dependency-name: com.google.appengine:appengine-api-1.0-sdk
+    versions:
+    - 1.9.86
+    - 1.9.87
+  - dependency-name: org.eclipse.jetty:jetty-maven-plugin
+    versions:
+    - 11.0.1
