@@ -15,6 +15,10 @@ env:
   - PATH=${HOME}/.cache/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/bin/:${PATH}
 before_install:
 - openssl aes-256-cbc -K $encrypted_811413ac669a_key -iv $encrypted_811413ac669a_iv -in phisix-api-f6d7427c49af.json.enc -out phisix-api-f6d7427c49af.json -d
+- pyenv versions
+- pyenv global 3.6.3 2.7.14
+- python --version
+- python2 --version
 script:
 - mvn -B clean org.jacoco:jacoco-maven-plugin:prepare-agent verify
 after_success:
