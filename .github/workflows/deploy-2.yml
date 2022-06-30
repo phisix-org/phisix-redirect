@@ -33,5 +33,5 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Build with Maven
-        run: mvn -B clean package appengine:deploy -Pphisix-2 --file pom.xml
+        run: mvn -B clean package appengine:deploy -Predirect-2 --file pom.xml
         
